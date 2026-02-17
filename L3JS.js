@@ -22,7 +22,7 @@ function playSFX(id) {
     sfx.play();
 }
 
-var playerHP = 100;
+var playerHP = 150;
 var bossHP = 300;
 var ultPoints = 0; // Track charge for "Eye of the Mask"
 var isPlayerTurn = true;
@@ -87,9 +87,12 @@ function abilityClick(abilityNum) {
         ultPoints += (dmg * 2); 
         alert("You dealed " + dmg + " DMG to the boss!");
         if (ultPoints > 100) ultPoints = 100;
+    } else if (abilityNum ==3){
+       ultPoints += 10
     } else {
-        ultPoints = 0; // Reset after using Ultimate
+         ultPoints = 0; // Reset after using Ultimate
     }
+    
 
     if (playerHP > 100) playerHP = 100;
     if (bossHP < 0) bossHP = 0;
@@ -183,4 +186,5 @@ function StartFight() {
 
 
 showValues();
+
 NextDialogue();
