@@ -87,8 +87,8 @@ function abilityClick(abilityNum) {
         ultPoints += (dmg * 2); 
         alert("You dealed " + dmg + " DMG to the boss!");
         if (ultPoints > 100) ultPoints = 100;
-    } else if (abilityNum ==3){
-       ultPoints += 10
+    } else if (abilityNum == 2){
+       ultPoints += 6
     } else {
          ultPoints = 0; // Reset after using Ultimate
     }
@@ -188,3 +188,4 @@ function StartFight() {
 showValues();
 
 NextDialogue();
+
