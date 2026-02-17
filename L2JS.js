@@ -12,7 +12,7 @@ const dialogues = [
 const abilities = [
     { minDmg: 5, maxDmg: 10, heal: 0, cost: 0, sfx: "sfx-slash" },   // Slash
     { minDmg: 10, maxDmg: 15, heal: 0, cost: 0, sfx: "sfx-multislash"  },  // Multislash
-    { minDmg: 0, maxDmg: 0, heal: 10, cost: 0, sfx: "sfx-heal" },   // Heal
+    { minDmg: 0, maxDmg: 0, heal: 20, cost: 0, sfx: "sfx-heal" },   // Heal
     { minDmg: 20, maxDmg: 40, heal: 20, cost: 100, sfx: "sfx-ult"  } // Ultimate
 ];
 
@@ -183,4 +183,5 @@ function StartFight() {
 
 
 showValues();
+
 NextDialogue();
