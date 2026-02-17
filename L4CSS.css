@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Ga+Maamli);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans);
+@import url(https://fonts.googleapis.com/css?family=Yesteryear);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body{
+    background-image: url('https://img.freepik.com/premium-vector/eerie-thunderstorm-dark-clouds-rainy-day-cartoon_1322206-52968.jpg?semt=ais_user_personalization&w=740&q=80');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color:black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.fightArea{
+    background-color: rgba(0, 255, 255, 0);
+    height: 79vh;
+}
+
+.dialogueDiv{
+    background-image: url('https://raw.githubusercontent.com/adsicat2029/Q3SA/refs/heads/main/PaperBG.png');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color:black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+    background-color: aliceblue;
+    height: 19.5vh;
+    width: 95%;
+    align-self: center
+}
+
+.audiobutton{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999; 
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    color: white;
+    font-family: 'DM Sans';
+  }
+.dialogueDiv .charname{
+    color: black;
+    max-height: 50px;
+    padding-top: 2px;
+    font-family: 'Ga Maamli';
+}
+
+.btn-light{
+    color: white;
+}
+
+.dialogueDiv p{
+    color: black;
+    font-size: 30px;
+    max-height: 30px;
+    padding-top: 2px;
+    font-family: 'DM Sans';
+}
+
+.health{
+    font-size: 75px;
+}
+.abilityDiv{
+    background-color: rgb(102, 0, 0);
+}
+
+.card-title, .card-text{
+    color: white;
+
+}
+
+.btn{
+
+  background-color: rgba(26, 20, 17, 0.644);
+
+  transition: 1s ease-in-out;
+}
+
+.btn-primary {
+  border-color: #000000; /* Red border */
+  border-width: 1px;
+  border-style: solid;
+}
+
+.card-title{
+    font-family: 'Ga Maamli';
+}
+
+.card-text{
+    font-family: 'DM Sans';
+    font-size: 12px !important;
+    width: 100%;
+}
+
+.btn:active {
+  transform: scale(1.1); /* Moves the button down 2px */
+  box-shadow: 0 1px 0 #006400; /* Changes the shadow to simulate being pressed in */
+  background-color: darkgreen; /* Changes background color */
+}
