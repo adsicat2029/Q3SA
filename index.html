@@ -14,22 +14,29 @@
         <script src="indexJS.js"></script>
 
         <audio id="bgm" autoplay  loop>
-            <source  src="https://github.com/adsicat2029/Q3SA/raw/refs/heads/main/'The%20Medieval%20Banquet'%20by%20Silvermansound%20%20%20Medieval%20Music%20(No%20Copyright).mp3" type="audio/mpeg">
+            <source  src="https://github.com/adsicat2029/Q3SA/raw/refs/heads/main/'Omega'%20by%20@ScottBuckley%20%20%20%20Epic%20Progressive%20Music%20(No%20Copyright).mp3" type="audio/mpeg">
         </audio>
 
        
 
         <div class="container maindiv">
-            <div class="maintextdiv me-3 ms-5">
-                <h1 class="mt-3 text-center">Cann's Adventures</h1>
-                <h2 class="text-center mx-4">You play as Cann, an aspiring adventurer. You travel through treacherous trails just to fight enemies. <br> <span style="font-weight:500" >Fight enemies with your skills and ultimate. Use skills four times to earn your ultimate. Levels get progressively harder.</span></h2>
-                <button class="text-center px-5 btn btn-secondary" onclick="toggleDiv('abtdevs')">About the Devs</button>   
-                 <button  id="musicbtn" class="text-center px-5 btn btn-light audiobutton fw-bold mt-2 mb-2" onclick="playmusic()">Play BGM <i class="fa-solid fa-volume-low"></i></button>    
-            </div>
+           <div class="maintextdiv me-3 ms-5 d-flex flex-column align-items-center">
+    <h1 class="mt-3 text-center">Cann's Adventures</h1>
+    <h2 class="text-center mx-4">
+        <span class="fw-bold">You play as Cann, an aspiring adventurer... <br>Remember the tips your master gave you.</span><span style="font-weight: normal;"> <br> Balance your heals and attacks. Use your ultimate when you get it.</span>
+         
+    </h2>
+    
+    <button class="px-5 btn btn-secondary" onclick="toggleDiv('abtdevs')">About the Devs</button>   
+    <button id="musicbtn" class="px-5 btn btn-light audiobutton fw-bold mt-2 mb-2" onclick="playmusic()">
+        Play BGM <i class="fa-solid fa-volume-low"></i>
+    </button>    
+</div>
 
             
 
 
+            
 
             <div class="buttondiv text-center">
                 <a href="level1.html"  class="text-center px-5 btn btn-light levelbutton fw-bold earth "> <span style="font-weight:600" class="leveltext" >Level 1 </span> <br>Guardian of Earth</a>
@@ -54,5 +61,4 @@
 
         
     </body>
-
 </html>
