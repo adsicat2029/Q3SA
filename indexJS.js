@@ -21,5 +21,6 @@ function toggleDiv(divid) {
     x.style.display = "none"; // Make the div disappear
   }
 
-  playmusic();
+
 }
+
