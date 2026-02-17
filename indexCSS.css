@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Ga+Maamli);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans);
+@import url(https://fonts.googleapis.com/css?family=Yesteryear);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body{
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/068/477/445/large/nataliia-gapankova-2-night-forest-trail-e.jpg?1697905797');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color:wheat;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.maindiv{
+    display: flex;            
+    justify-content: center;  
+    align-items: center;       
+    height: 100vh;             
+    width: 100%;
+
+
+}
+
+.audiobutton{
+    max-width: 200px;
+}
+
+.maintextdiv{
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 300px;
+}
+
+.abtDevsDiv{ 
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 300px;
+    min-height: 250px;
+    font-family: 'DM Sans';
+}
+
+
+
+.levelbutton{
+    background-image:  url('https://raw.githubusercontent.com/adsicat2029/Q3SA/refs/heads/main/wall%20.png');
+     background-size: 200px;
+     border-radius: 25px;
+    font-family: "DM Sans";
+    color: rgb(255, 255, 255);
+    min-width: 500px;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px #000000;
+    transition: 0.4s ease-in-out;
+
+    text-decoration: none;
+    display: inline-block;
+}
+
+.levelbutton:visited, .levelbutton:active, .levelbutton:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.levelbutton:hover{
+    transform: scale(1.05);
+
+}
+
+.air:hover{
+    color: rgb(208, 255, 255) !important; 
+}
+
+.water:hover{
+    color: rgb(110, 149, 255) !important;
+}
+
+.fire:hover{
+    color: rgb(255, 131, 74) !important;
+}
+
+.earth:hover{
+    color:  rgb(82, 255, 105) !important;
+}
+
+.leveltext{
+    font-family: "Ga Maamli";
+    font-size:30px
+}
+
+h1{
+    font-family: "Ga Maamli";
+}
+
+h2{
+    font-family: "DM Sans";
+    font-weight: 900;
+}
