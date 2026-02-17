@@ -1,6 +1,6 @@
 const dialogues = [
     { name: "Cann", dialogue: "Last one until I reach true dignity." },
-   /* { name: "Narrator", dialogue: "Cann sees a tornado forming in front of him." },
+   { name: "Narrator", dialogue: "Cann sees a tornado forming in front of him." },
     { name: "Narrator", dialogue: "It engulfs him and brings him to an unknown place." },
     { name: "Cann", dialogue: "WHAT was that thing??" },
     { name: "Narrator", dialogue: "He looks around and sees... the sky?" },
@@ -16,7 +16,7 @@ const dialogues = [
     { name: "Cann", dialogue: "Well, do we battle?" },
      { name: "Bender of the Wind and Skies", dialogue: "If I die, at least I died to a worthy opponent." },
       { name: "Narrator", dialogue: "The god brings Cann higher up." },
-       { name: "Bender of the Wind and Skies", dialogue: "See you on the other side." }, */
+       { name: "Bender of the Wind and Skies", dialogue: "See you on the other side." }, 
 ];
 
 const abilities = [
@@ -195,4 +195,5 @@ function StartFight() {
 
 
 showValues();
+
 NextDialogue();
