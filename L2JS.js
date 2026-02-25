@@ -10,21 +10,21 @@ const dialogues = [
 ];
 
 const abilities = [
-    { minDmg: 5, maxDmg: 10, heal: 0, cost: 0, sfx: "sfx-slash" },   // Slash
-    { minDmg: 10, maxDmg: 15, heal: 0, cost: 0, sfx: "sfx-multislash"  },  // Multislash
-    { minDmg: 0, maxDmg: 0, heal: 20, cost: 0, sfx: "sfx-heal" },   // Heal
-    { minDmg: 20, maxDmg: 40, heal: 20, cost: 100, sfx: "sfx-ult"  } // Ultimate
+    { minDmg: 5, maxDmg: 10, heal: 0, cost: 0, sfx: "sfx-slash" },  
+    { minDmg: 10, maxDmg: 15, heal: 0, cost: 0, sfx: "sfx-multislash"  },  
+    { minDmg: 0, maxDmg: 0, heal: 20, cost: 0, sfx: "sfx-heal" }, 
+    { minDmg: 20, maxDmg: 40, heal: 20, cost: 100, sfx: "sfx-ult"  } 
 ];
 
 function playSFX(id) {
     const sfx = document.getElementById(id);
-    sfx.currentTime = 0; // Rewind to start
+    sfx.currentTime = 0; 
     sfx.play();
 }
 
 var playerHP = 100;
 var bossHP = 200;
-var ultPoints = 0; // Track charge for "Eye of the Mask"
+var ultPoints = 0; 
 var isPlayerTurn = true;
 
 function sleep(ms) {
@@ -36,7 +36,6 @@ function showValues() {
     document.getElementById("pHP").innerHTML = playerHP;
     document.getElementById("uP").innerHTML = ultPoints;
     
-    // Visual feedback for Ult button
     const ultBtn = document.getElementById("ultimate");
     if (ultPoints >= 100) {
         ultBtn.classList.remove("btn-primary");
@@ -52,7 +51,6 @@ function showValues() {
 function setButtonsState(disabled) {
     const buttons = document.querySelectorAll("#abilityDiv button");
     buttons.forEach(btn => {
-        // Ultimate button is ALWAYS disabled unless points == 100
         if (btn.id === "ultimate" && ultPoints < 100) {
             btn.disabled = true;
         } else {
@@ -69,7 +67,6 @@ function getRandomInteger(min, max) {
 function abilityClick(abilityNum) {
     if (!isPlayerTurn || bossHP <= 0) return;
     
-    // Check if it's the ultimate and if we have enough points
     if (abilityNum === 3 && ultPoints < 100) return;
 
     playSFX(abilities[abilityNum].sfx);
@@ -82,13 +79,12 @@ function abilityClick(abilityNum) {
     bossHP -= dmg;
     playerHP += heal;
 
-    // Build Ult Points based on damage dealt (unless using the Ult itself)
     if (abilityNum !== 3) {
         ultPoints += (dmg * 2); 
         alert("You dealed " + dmg + " DMG to the boss!");
         if (ultPoints > 100) ultPoints = 100;
     } else {
-        ultPoints = 0; // Reset after using Ultimate
+        ultPoints = 0;
     }
 
     if (playerHP > 100) playerHP = 100;
@@ -132,11 +128,9 @@ function showWinScreen() {
     const screen = document.getElementById("winScreen");
     screen.classList.remove("d-none");
     screen.classList.add("d-flex");
-    // Stop music if you want
     document.getElementById("bgm").pause();
 }
 
-// --- Dialogue Logic ---
 var currentDialogue = 0;
 async function typeWriter(id, text, speed = 50) {
     const el = document.getElementById(id);
@@ -177,7 +171,7 @@ function StartFight() {
     const fightArea = document.getElementById("fightArea");
     fightArea.classList.remove("d-none");
     fightArea.classList.add("d-flex");
-    setButtonsState(false); // Initialize button states
+    setButtonsState(false); 
 }
 
 
@@ -185,3 +179,4 @@ function StartFight() {
 showValues();
 
 NextDialogue();
+
